@@ -9,14 +9,20 @@ import { Grid, Form, Input, TextArea, Button, Select, Card, Icon } from "semanti
 
 function SmurfCard(props){
 
-    //console.log("player card", props);
+    
+
+    const handleClick = (event) => {
+        
+        props.deleteSmurf(props.smurf.id);
+        window.location.reload();//refreshes the window 
+    }
 
     return( 
 
         <Grid.Column padded key={props.id}>
         <Card>
         <Card.Content>
-            <Card.Header>{props.smurf.name} <Icon onClick = {()=> {props.deleteSmurf(props.smurf.id)} } className = "delete-icon" name='delete' /></Card.Header>
+            <Card.Header>{props.smurf.name} <Icon onClick = {handleClick } className = "delete-icon" name='delete' /></Card.Header>
             <Card.Description>{`Age: ${props.smurf.age}`}</Card.Description>
             <Card.Description>{`Height: ${props.smurf.height}`}</Card.Description>           
             

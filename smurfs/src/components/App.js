@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
-
+import thesmurfs from "../thesmurfs.png";
 import styled from 'styled-components';
 import 'semantic-ui-css/semantic.css'; 
 import 'semantic-ui-css/semantic.min.css'; 
@@ -25,7 +25,8 @@ const AppContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-   
+    box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24); 
     
     
 
@@ -33,16 +34,15 @@ const AppContainer = styled.div`
 
 //styled component - page heading
 const MainHeading = styled.div`
-width: 100%;
-  height: 100px;
+  width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
   color: black;
   text-stroke: 5px black;
-  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
-  0 2px 4px rgba(0, 0, 0, 0.24); 
+  
  
 
 `;
@@ -54,7 +54,7 @@ function App() {
       <AppContainer>
       
       
-      <MainHeading>Smurf Village</MainHeading>    
+      <MainHeading><img src = {thesmurfs} alt = "the smurfs logo" /></MainHeading>    
 
       <AddForm />  
 

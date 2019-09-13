@@ -16,7 +16,7 @@ const PlayersInfoDiv = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     align-content: center;
     align-content: space-around;
     width: 100%;
