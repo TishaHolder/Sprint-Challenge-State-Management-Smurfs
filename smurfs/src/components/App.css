@@ -37,6 +37,29 @@
   
 }
 
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 20%;
+  /*background-color: rgb(71, 161, 250);*/
+  /*background-color: #e383b9;*/
+}
+
+input {
+  width: 25%;
+  height: 30px;
+ 
+}
+
+
+button {
+  width: 20%;
+  height: 30px;
+  
+}
+
 
 
 

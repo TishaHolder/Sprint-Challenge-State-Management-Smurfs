@@ -71,11 +71,34 @@ export const reducer = (state = initialState, action) => {
             ...state            
         };
 
-        
+        case DELETE_SMURF_SUCCESS:
+            return {
+                ...state,
+
+                smurfs: state.smurfs.filter(smurf => {
+                    if(smurf.id === action.payload.id){
+                        return false;
+                    }
+                    else {
+                        return true;
+                    }
+                })                 
+               
+                
+                
+            };
+
+            
+        case DELETE_SMURF_FAIL:
+            return {
+                ...state,
+                error: action.payload            
+            };
         
         default:
         return state;
     }
 
   };
+
 

@@ -7,7 +7,6 @@ import 'semantic-ui-css/semantic.css';
 import 'semantic-ui-css/semantic.min.css'; 
 import { Grid, Form, Input, TextArea, Button, Select, Card, Icon } from "semantic-ui-react";
 
-
 function SmurfCard(props){
 
     //console.log("player card", props);
@@ -17,7 +16,7 @@ function SmurfCard(props){
         <Grid.Column padded key={props.id}>
         <Card>
         <Card.Content>
-            <Card.Header>{props.smurf.name} </Card.Header>
+            <Card.Header>{props.smurf.name} <Icon onClick = {()=> {props.deleteSmurf(props.smurf.id) } } className = "delete-icon" name='delete' /></Card.Header>
             <Card.Description>{`Age: ${props.smurf.age}`}</Card.Description>
             <Card.Description>{`Height: ${props.smurf.height}`}</Card.Description>           
             
@@ -26,8 +25,8 @@ function SmurfCard(props){
         </Grid.Column>   
     );
 
-
 }
 
 export default SmurfCard;
+
 
