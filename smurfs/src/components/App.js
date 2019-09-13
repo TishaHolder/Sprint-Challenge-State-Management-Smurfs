@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import thesmurfs from "../thesmurfs.png";
+import smurfbackground from "../smurfbackground.png";
 import styled from 'styled-components';
 import 'semantic-ui-css/semantic.css'; 
 import 'semantic-ui-css/semantic.min.css'; 
@@ -27,7 +28,9 @@ const AppContainer = styled.div`
     align-items: center;    
     box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
     0 2px 4px rgba(0, 0, 0, 0.24); 
-    
+    background-image: url(${smurfbackground});
+    background-size: 30%;
+    background-repeat: no-repeat;
     
 
 `;

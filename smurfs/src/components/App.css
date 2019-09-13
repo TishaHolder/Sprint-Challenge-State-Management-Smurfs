@@ -29,7 +29,7 @@
 
 .delete-icon {
   position: absolute;
-  color: hotpink;
+  color: #3c68ae;
   padding: 3px;
   right: 5px;
   top: 5px;
@@ -56,8 +56,23 @@ input {
 
 button {
   width: 20%;
-  height: 30px;
-  
+  background: #3c68ae;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.507);
+  margin: 35px;
+}
+
+
+
+.ui.card>.content {
+  background-color: #D9499A;
 }
 
 
