@@ -8,8 +8,9 @@ export const ADD_SMURF_START = "ADD_SMURF_START";
 export const ADD_SMURF_SUCCESS = "ADD_SMURF_SUCCESS";
 export const ADD_SMURF_FAIL = "ADD_SMURF_FAIL";
 
-
-
+export const DELETE_SMURF_START = "DELETE_SMURF_START";
+export const DELETE_SMURF_SUCCESS = "DELETE_SMURF_SUCCESS";
+export const DELETE_SMURF_FAIL = "DELETE_SMURF_FAILURE";
 
 export const getSmurf = () => dispatch => {
     //BEFORE WE MAKE OUR AXIOS CALL
@@ -64,11 +65,12 @@ export const getSmurf = () => dispatch => {
         
       );
 
-      
+    };
 
-                   
+            
       
       
-
+        
       
   };
+

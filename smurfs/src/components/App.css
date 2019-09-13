@@ -27,5 +27,18 @@
   to { transform: rotate(360deg); }
 }
 
+.delete-icon {
+  position: absolute;
+  color: hotpink;
+  padding: 3px;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  
+}
+
+
+
+
 
 

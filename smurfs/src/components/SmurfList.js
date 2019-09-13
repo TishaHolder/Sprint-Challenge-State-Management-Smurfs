@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 
-
+import { getSmurf } from "../actions/action.js";
 import styled from 'styled-components';
 
 import SmurfCard from "./SmurfCard.js";
 
-
+import { deleteSmurf } from '../actions/action.js';
 
 import 'semantic-ui-css/semantic.css'; 
 import 'semantic-ui-css/semantic.min.css'; 
@@ -47,7 +47,7 @@ function SmurfList(props) {
 
         {props.smurfs.map ( (smurf, index) => 
 
-             <SmurfCard key = {index} smurf = {smurf} /*deleteSmurf = {props.deleteSmurf}*//>  
+             <SmurfCard key = {index} smurf = {smurf} deleteSmurf = {props.deleteSmurf}/>  
         )}
 
     </PlayersInfoDiv>
@@ -67,5 +67,7 @@ const mapStateToProps = state => {
 
 export default connect(
     mapStateToProps,
-    { getSmurf /*, deleteSmurf*/ }
+    { getSmurf , deleteSmurf }
 )(SmurfList);
+
+
