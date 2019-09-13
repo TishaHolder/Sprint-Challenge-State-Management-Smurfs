@@ -16,7 +16,7 @@ function SmurfCard(props){
         <Grid.Column padded key={props.id}>
         <Card>
         <Card.Content>
-            <Card.Header>{props.smurf.name} <Icon onClick = {()=> {props.deleteSmurf(props.smurf.id) } } className = "delete-icon" name='delete' /></Card.Header>
+            <Card.Header>{props.smurf.name} <Icon onClick = {()=> {props.deleteSmurf(props.smurf.id)} } className = "delete-icon" name='delete' /></Card.Header>
             <Card.Description>{`Age: ${props.smurf.age}`}</Card.Description>
             <Card.Description>{`Height: ${props.smurf.height}`}</Card.Description>           
             

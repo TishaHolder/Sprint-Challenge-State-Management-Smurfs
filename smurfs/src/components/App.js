@@ -33,6 +33,7 @@ const AppContainer = styled.div`
 
 //styled component - page heading
 const MainHeading = styled.div`
+width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -40,6 +41,8 @@ const MainHeading = styled.div`
   font-size: 3rem;
   color: black;
   text-stroke: 5px black;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+  0 2px 4px rgba(0, 0, 0, 0.24); 
  
 
 `;

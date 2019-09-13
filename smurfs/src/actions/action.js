@@ -1,4 +1,5 @@
 import axios from "axios";
+import {useEffect} from "react";
 
 export const FETCH_SMURF_START = "FETCH_SMURF_START";
 export const FETCH_SMURF_SUCCESS = "FETCH_SMURF_SUCCESS";
@@ -78,7 +79,8 @@ export const getSmurf = () => dispatch => {
           .then(res =>
             //TELL OUR APP TO TRANSITION TO A SUCCESSFUL STATE        
             //OR RES.DATA
-            dispatch({ type: DELETE_SMURF_SUCCESS, payload: id }),
+            dispatch({ type: DELETE_SMURF_SUCCESS, payload: id })    
+            
             
             
           )
