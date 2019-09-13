@@ -26,3 +26,57 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.delete-icon {
+  position: absolute;
+  color: #3c68ae;
+  padding: 3px;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 20%;
+  /*background-color: rgb(71, 161, 250);*/
+  /*background-color: #e383b9;*/
+}
+
+input {
+  width: 25%;
+  height: 30px;
+ 
+}
+
+
+button {
+  width: 20%;
+  background: #3c68ae;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 10px;
+  box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.507);
+  margin: 35px;
+}
+
+
+
+.ui.card>.content {
+  background-color: #D9499A;
+}
+
+
+
+
+
+
